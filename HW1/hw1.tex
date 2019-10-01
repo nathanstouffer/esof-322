@@ -1,0 +1,145 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{spverbatim}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{ESOF 322 - Homework 1}
+\author{Nathan Stouffer and Kevin Browder}
+
+\maketitle
+\newpage
+
+\section*{Exercises Part A}
+
+The following UML diagrams are from the psuedocode problems on the homework.
+
+\subsection*{Problem 1}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4in]{Problem1.jpg}
+\end{figure}
+
+\subsection*{Problem 2}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4in]{Problem2.jpg}
+\end{figure}
+
+\subsection*{Problem 3}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4in]{Problem3.jpg}
+\end{figure}
+
+\newpage
+
+\subsection*{Problem 4}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=4in]{Problem4.jpg}
+\end{figure}
+
+\newpage
+
+\section*{Exercises Part B}
+
+The following is our psuedocode from the diagram given in Part B. \\
+
+\begin{spverbatim}
+
+// Company is a whole and contains parts
+public class Company{
+    public String name;
+    public Address headquarters;
+    
+    public Employee[] employee;
+    public Customer[] customer;
+     
+    public VehicleRentalService service;
+    
+    public Motorbike[] motorbike;
+    public Car[] car;
+    public Truck[] truck;
+}
+	
+public Interface IRentable{
+    public void rent();
+}
+
+public class Vehicle implements IRentable{
+    public void rent(){ \\ code goes here to realize rent() }
+}
+
+// Truck is an aggregate of Company
+public class Truck extends Vehicle{
+    public UnlimitedNatural weight;
+    public UnlimitedNatural power;
+    public String manufacturer;
+    public String regNo;
+}
+
+// Car is an aggregate of Company
+public class Car extends Vehicle{
+    public CarKind kind;
+    public UnlimitedNatural noSeats;
+    public UnlimitedNatural power;
+    public String manufacturer;
+    public String regNo;
+}
+
+// Motorbike is an aggregate of Company
+public class Motorbike extends Vehicle{
+    public MbKind kind;
+    public UnlimitedNatural cylinderCap;
+    public UnlimitedNatural power;
+    public String manufacturer;
+    public String regNo;
+}
+
+public class Person{
+    public String name;
+    public String email;
+    
+    public Address address;
+}
+
+// Employee is an aggregate of Company
+public class Employee extends Person{}
+
+// Customer is a whole and contains parts
+public class Customer extends Person{
+    public BankAccount bankAccount;
+}
+
+public class Subcontractor extends Employee, Customer{}
+
+// BankAccount is a composition of Company
+public class BankAccount{
+    public UnlimitedNatural number;
+    public String depositor;
+    public String bank;
+}
+
+public class Service{
+    public Customer customer;
+}
+
+// VehicleRentalService is a composition of Company
+public class VehicleRentalService extends Service{
+    public Vehicle vehicle;
+    
+    public void offerCar();
+    public void offerMotorBike();
+    public void offerTruck();
+}
+
+\end{spverbatim}
+
+\end{document}
