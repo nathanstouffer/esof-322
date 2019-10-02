@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.8.30)  2 OCT 2019 09:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.8.30)  2 OCT 2019 10:13
 entering extended mode
 **./hw4.tex
 (hw4.tex
@@ -273,24 +273,31 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ) [1
 
-{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] (hw4.au
-x) ) 
+{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<hw4-patterns.png, id=8, 1927.2pt x 1084.05pt>
+File: hw4-patterns.png Graphic file (type png)
+<use hw4-patterns.png>
+Package pdftex.def Info: hw4-patterns.png  used on input line 29.
+(pdftex.def)             Requested size: 433.62pt x 243.90073pt.
+ [2 <./hw4-patterns.png>] (hw4.aux) ) 
 Here is how much of TeX's memory you used:
- 2544 strings out of 492973
- 36354 string characters out of 3126692
- 104929 words of memory out of 3000000
- 6393 multiletter control sequences out of 15000+200000
- 8261 words of font info for 30 fonts, out of 3000000 for 9000
+ 2552 strings out of 492973
+ 36478 string characters out of 3126692
+ 106929 words of memory out of 3000000
+ 6398 multiletter control sequences out of 15000+200000
+ 8569 words of font info for 31 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,32p,272b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Kevin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmbx12.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Kevin/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on hw4.pdf (2 pages, 43104 bytes).
+ 41i,6n,32p,396b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Kevin/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Kevin/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Kevin/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Users/Kevin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><C:/Users/Kevin/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr17.pfb>
+Output written on hw4.pdf (2 pages, 409038 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
+ 32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
