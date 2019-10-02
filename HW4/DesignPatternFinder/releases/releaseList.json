@@ -1,0 +1,33 @@
+[
+  {
+    "Id": "0",
+    "Name": "Design Pattern Finder v1.0",
+    "DevelopmentStatus": "Stable",
+    "Description": "First Release 1.0",
+    "ReleasedDatge": "0001-01-01T00:00:00",
+    "ModifiedDate": "2008-12-28T03:08:01.99-08:00",
+    "Files": [
+      {
+        "Id": "e020f117-c1ab-48fd-bc02-213b620bc090",
+        "FileName": "Design Pattern Finder v1.0 Binary.zip",
+        "Url": "./0/e020f117-c1ab-48fd-bc02-213b620bc090",
+        "Type": "Application",
+        "UploadDate": "2007-12-06T03:26:56.59-08:00"
+      },
+      {
+        "Id": "4149c339-2ccf-461b-bcda-2a1888180471",
+        "FileName": "Design Pattern Finder v1.0 Source VS2005.zip",
+        "Url": "./0/4149c339-2ccf-461b-bcda-2a1888180471",
+        "Type": "Source Code",
+        "UploadDate": "2007-12-06T03:26:56.607-08:00"
+      },
+      {
+        "Id": "2157f1ef-2221-40ce-ad2c-91e453a890ec",
+        "FileName": "Design Pattern Finder v1.0 Source VS2008.zip",
+        "Url": "./0/2157f1ef-2221-40ce-ad2c-91e453a890ec",
+        "Type": "Source Code",
+        "UploadDate": "2007-12-06T03:26:56.623-08:00"
+      }
+    ]
+  }
+]

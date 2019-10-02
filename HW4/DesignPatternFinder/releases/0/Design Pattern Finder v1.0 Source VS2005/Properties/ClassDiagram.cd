@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="DesignPatternFinder.DesignPatternFinder">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>DesignPatternFinder.cs</FileName>
+      <HashCode>AAAAQAAAACAAABAgAAAAgAAACBABAAgAABABAQAAAEg=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="extensionsString" Hidden="true" />
+      <Method Name="FileContainsPattern" Hidden="true" />
+      <Method Name="FindPatterns" Hidden="true" />
+      <Method Name="GetFilesForMultipleExtensions" Hidden="true" />
+      <Field Name="internalResults" Hidden="true" />
+      <Field Name="patternDefinitions" Hidden="true" />
+      <Field Name="results" Hidden="true" />
+      <Field Name="searchFileContent" Hidden="true" />
+      <Field Name="startDirectory" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Class>
+  <Class Name="DesignPatternFinder.PatternDefinitions">
+    <Position X="3.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>PatternDefinitions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternFinder.PatternDefinition" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>PatternDefinitions.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAQEgAAAAAQAAAAEAMAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="name" Hidden="true" />
+      <Field Name="tags" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DesignPatternFinder.PatternFinderResults">
+    <Position X="5.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>PatternFinderResults.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DesignPatternFinder.PossiblePatterns">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PatternFinderResults.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="DesignPatternFinder.PatternFinderResult">
+    <Position X="5.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>PatternFinderResults.cs</FileName>
+      <HashCode>AAAAIAgAAAAAAAAAAAAAAAAAAAAEAAAgBAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Members>
+      <Field Name="file" Hidden="true" />
+      <Field Name="possiblePatterns" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+  </Struct>
+</ClassDiagram>
