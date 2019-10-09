@@ -17,21 +17,31 @@
 
 \subsection*{Part A}
 \subsubsection*{1.}
-We downloaded RxJava which is the Reactive Extensions for the Java Virtual Machine.
+Question: What system did you download?\\\\
+
+Solution: We downloaded RxJava which is the Reactive Extensions for the Java Virtual Machine.
 \subsubsection*{2.}
-This library allows you to use Reactive Extension in Java. Reactive extensions is used for asynchronous programming. This library allows you to do asynchronous programming in Java.
+Question: What does it do?\\\\
+
+Solution: This library allows you to use Reactive Extension in Java. Reactive extensions is used for asynchronous programming. This library allows you to do asynchronous programming in Java.
 \subsubsection*{3.}
-This library has about 50,000 lines of code. We calculated this by cloning the repo to a local machine and then using the git ls-files command to determine the number of lines in the documentation (7856) and then determining the number of lines of code in the entire library (57,503). We can then subtract the documentation and find that there are around 50,000 lines of source code.
+Question: How many Lines of Code does it have? How did you calculate this?\\\\
+Solution: This library has about 50,000 lines of code. We calculated this by cloning the repo to a local machine and then using the git ls-files command to determine the number of lines in the documentation (7856) and then determining the number of lines of code in the entire library (57,503). We can then subtract the documentation and find that there are around 50,000 lines of source code.
 \subsection*{Part B}
 \subsubsection*{1.}
+Question: Capture the output of the tool\\\\
+Solution: 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=6in]{hw4-patterns.png}
 \end{figure}
 \subsubsection*{2.}
-This program has a set of design pattern definitions in an xml file. It then starts iterating through the file structure and then through the code in each file comparing it to the definitions. If it finds a match it adds that pattern to the output. It then prints all the patterns it found in that file with the file path and then moves to the next file. 
+Question: How does the tool look for instances of the design pattern?\\\\
+
+Solution:This program has a set of design pattern definitions in an xml file. It then starts iterating through the file structure and then through the code in each file comparing it to the definitions. If it finds a match it adds that pattern to the output. It then prints all the patterns it found in that file with the file path and then moves to the next file. 
 \subsubsection*{3.}
-I think I would use a similar design to the DesignPatternTool. All of the design patterns have a pretty distinct signature in code that can be defined. Once these are defined it would be a pretty simple program to use recursion to go through all of the files inside of the directory defined by the user in the program.   
+Question: Do you think the process used by the tool is correct?  How would you do it? Be specific\\\\
+Solution: I think I would use a similar design to the DesignPatternTool. All of the design patterns have a distinct signature in code that can be defined. When a user gives a source code location the program could recursively go through every file in the structure beneath were the user defined to start. Each file could then be iterated through line by line and compared with the design pattern definitions supplied to it in the beginning. When it finds a match it would output the pattern it found and the file location. 
 
 
 \newpage
