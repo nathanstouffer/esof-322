@@ -1,0 +1,129 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{spverbatim}
+\usepackage{graphicx}
+
+\begin{document}
+	
+\title{ESOF 322 - Homework 5}
+\author{Nathan Stouffer and Kevin Browder}
+
+\maketitle
+\newpage
+
+\section*{Question 1}
+\subsection*{Part A}
+Problem: Create a control flowgraph for the sieve algorithm. To the left of the line numbers in the
+source code clearly identify the nodes that will be used in your graph. Once you have
+identified the nodes, draw the control graph. \\\\
+Solution: Drawn below next to the C code.
+\begin{spverbatim}
+	1. /* Find all primes from 2-upper_bound using Sieve of Eratosthanes */
+	2.
+	3. #include
+	4. typedef struct IntList {
+	5.     int value;
+	6.     struct IntList *next;
+	7.     } *INTLIST, INTCELL;
+	8. INTLIST sieve (int upper_bound ) {
+	9.
+	10.     INTLIST prime_list = NULL; /* list of primes found */
+	11.     INTLIST cursor; /* cursor into prime list */
+	12.     int candidate; /* a candidate prime number */
+	13.     int is_prime; /* flag: 1=prime, 0=not prime */
+	14.
+	15.     /* try all numbers up to upper_bound */
+	16.     for (candidate=2;
+	17.
+	18.         candidate <= upper_bound;
+	19.         candidate++) {
+	20.
+	21.             is_prime = 1; /* assume candidate is prime */
+	22.             for(cursor = prime_list;
+	23.
+	24.                 cursor;
+	25.                 cursor = cursor->next) {
+	26.
+	27.                     if (candidate % cursor->value == 0) {
+	28.
+	29.                         /* candidate divisible by prime */
+	30.                         /* in list, can't be prime */
+	31.                         is_prime = 0;
+	32.                         break; /* "for cursor" loop */
+	33.                     }
+	34.             }
+	35.             if(is_prime) {
+	36.
+	37.                 /* add candidate to front of list */
+	38.                 cursor = (INTLIST) malloc(sizeof(INTCELL));
+	39.                 cursor->value = candidate;
+	40.                 cursor->next = prime_list;
+	41.                 prime_list = cursor;
+	42.             }
+	43.         }
+	44.     return prime_list;
+	45. }
+\end{spverbatim}
+
+\subsection*{Part B}
+Problem: Provide a set of test cases that would give 100\% Node Coverage (NC). \\\\
+Solution:
+
+\subsection*{Part C}
+Problem: Provide a set of test cases that would give 100\% Edge Coverage (EC). \\\\
+Solution: 
+
+\subsection*{Part D}
+Problem: Is 100\% NC or 100\% EC possible in general? Why, or why not? \\\\
+Solution: 
+
+\newpage
+
+\section*{Question 2}
+
+\subsection*{Part A}
+Problem: Draw the execution of the calls that exhibit the YoYo problem for a runtime trace of
+C3.B, and for C4.A (Draw both on the diagram below). \\\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=6in]{yo-yo-diagram.png}
+\end{figure}
+
+\subsection*{Part B}
+Problem: Describe what happens when we call C1.D \\\\
+Solution:
+
+\newpage
+
+\section*{Question 3}
+Given the following program:
+\begin{spverbatim}
+	1. public int fibonacci (int i) { 
+	2.     int fib1 = 1;    // fib(n-1)
+	3.     int fib2 = 1;    // fib(n-2)
+	4.     int fib = 0;
+	5.     int j;
+
+	6.     if (i <= 1) 
+	7.         fib = 1;
+	       else 
+	8.        for (j = 1;
+	9.             j < i;
+	10.             j++) {
+	11.            fib = fib2 + fib1;
+	12.            fib2 = fib1;
+	13.            fib1 = fib;
+	          }
+	14.    return fib;		
+	   }
+\end{spverbatim} \bigskip
+\noindent
+Problem: Give test cases that will kill the following mutations: \\
+a. Line 6: if (i $<$ 1)	\\
+b. Line 6: if (i == 1)	\\
+c. Line 12: fib2 = fib;	\\\\
+Solution:
+
+\end{document}
