@@ -4,6 +4,7 @@
 \usepackage{amsmath}
 \usepackage{spverbatim}
 \usepackage{graphicx}
+\usepackage{multicol}
 
 \begin{document}
 	
@@ -69,16 +70,25 @@ Solution: Drawn below next to the C code.
 
 \subsection*{Part B}
 Problem: Provide a set of test cases that would give 100\% Node Coverage (NC). \\\\
-Solution:
-
+Solution:\\
+Test Case 1: \\
+Input: 4 \\
+Expected Output: [3, 2]\\
+Actual Output: [3, 2]\\
+$T = \{ t_1 = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14\}\}$
 \subsection*{Part C}
 Problem: Provide a set of test cases that would give 100\% Edge Coverage (EC). \\\\
-Solution: 
-
+Solution: \\
+Test Case 1: \\
+Input: 4 \\
+Expected Output: [3, 2]\\
+Actual Output: [3, 2]\\
+$T = \{ t_1 = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14\}\}$
 \subsection*{Part D}
 Problem: Is 100\% NC or 100\% EC possible in general? Why, or why not? \\\\
-Solution: 
+Solution: \\
 
+Generally it is possible because there a finite number of nodes and edges and you simply must come up with test cases to cover all of them.
 \newpage
 
 \section*{Question 2}
@@ -93,7 +103,7 @@ C3.B, and for C4.A (Draw both on the diagram below). \\\\
 
 \subsection*{Part B}
 Problem: Describe what happens when we call C1.D \\\\
-Solution:
+Solution: 
 
 \newpage
 
@@ -124,6 +134,39 @@ Problem: Give test cases that will kill the following mutations: \\
 a. Line 6: if (i $<$ 1)	\\
 b. Line 6: if (i == 1)	\\
 c. Line 12: fib2 = fib;	\\\\
-Solution:
+Solution:\\
+\begin{multicols}{2}
+\noindent
+a. normal: \\
+	input = 1 \\
+	return = 1 \\
+	expected = 1 \\
+	mutant: \\
+	input = 1 \\
+	return = 0 \\
+	expected = 1\\
+Returns not equal, mutant killed \\\\\\
+b.normal: \\
+input = 0 \\
+return = 1 \\
+expected = 1 \\
+mutant: \\
+input = 0 \\
+return = 0 \\
+expected = 1 \\
+Returns not equal, mutant killed \\\\
+\end{multicols}
+\noindent
+c.normal: \\
+input = 3 \\
+return = 3 \\
+expected = 3 \\
+mutant: \\
+input = 3 \\
+return = 4 \\
+expected = 3 \\
+Returns not equal, mutant killed \\\\
+
+	
 
 \end{document}
