@@ -86,7 +86,7 @@ Actual Output: [3, 2]\\
 $T = \{ t_1 = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14\}\}$
 \subsection*{Part D}
 Problem: Is 100\% NC or 100\% EC possible in general? Why, or why not? \\\\
-Solution: \\
+Solution: 
 No, it is not possible in general because there are some nodes/edges that are impossible to cover.
 Example: 
 \begin{Verbatim}[tabsize=4]
@@ -96,7 +96,7 @@ if(i < 0){
 	}
 }	
 \end{Verbatim}
-In this example it would be impossible to get 100\% EC or 100\% NC because once you are in first if statement there is no way to get into the second if statement. This shows that generally it is impossible to get 100\% EC and 100\% NC
+In this example it would be impossible to get 100\% EC or 100\% NC because once you are in first if statement there is no way to get into the second if statement. This example shows that it is not possible in general to get 100\% EC and 100\% NC.
 \newpage
 
 \section*{Question 2}
@@ -108,9 +108,10 @@ C3.B, and for C4.A (Draw both on the diagram below). \\\\
 	\centering
 	\includegraphics[width=6in]{yo-yo-diagram.png}
 \end{figure}
+\newpage
 \subsection*{Part B}
 Problem: Describe what happens when we call C1.D \\\\
-Solution:  
+Solution: An error occurs when you call C1.D. This is because of the nature of inheritance in object oriented programming. Inheritance works from the superclass down and is \textit{not} bidirectional relationship. This is what give inheritance its power, classes higher in the hierarchy do not implement methods below them. If they did there would be no point in using inheritance, it would be the same as making one big class because all the classes would share each others methods. This would also violate the dependency inversion design principle because classes high in the hierarchy would rely on classes lower in the hierarchy.
 
 \newpage
 
